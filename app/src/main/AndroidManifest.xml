@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Restapi">
         <activity
+            android:name=".activity_kris_room_list"
+            android:exported="false" />
+        <activity
+            android:name=".kris_room_activity"
+            android:exported="false" />
+        <activity
+            android:name=".kris_roomList_activity"
+            android:exported="false" />
+        <activity
+            android:name=".kris_authentication_activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
