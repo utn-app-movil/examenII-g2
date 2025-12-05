@@ -11,6 +11,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Restapi">
+
+        <activity
+            android:name=".Walk_AuthenticationActivity"
+            android:exported="false"
+            android:label="@string/walk_label_auth" />
+
+        <activity
+            android:name=".Walk_RoomActivity"
+            android:exported="false"
+            android:label="@string/walk_label_room_create" />
+
+        <activity
+            android:name=".Walk_RoomListActivity"
+            android:exported="false"
+            android:label="@string/walk_label_room_list" />
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- LOGIN -->
+    <string name="walk_login_title">User Login</string>
+    <string name="walk_login_user_hint">Username</string>
+    <string name="walk_login_pass_hint">Password</string>
+    <string name="walk_login_button_text">Login</string>
+
+    <!-- ROOM CREATION -->
+    <string name="walk_room_name_hint">Room Name</string>
+    <string name="walk_room_capacity_hint">Capacity</string>
+    <string name="walk_room_create_button">Create Room</string>
+
+    <!-- ROOM LIST -->
+    <string name="walk_room_list_title">Rooms</string>
+    <string name="walk_refresh_button">Refresh</string>
+    <string name="walk_reserve_button">Reserve</string>
+    <string name="walk_unreserve_button">Unreserve</string>
+
+    <!-- ACTIVITY LABELS (para Android Manifest) -->
+    <string name="walk_label_auth">Login</string>
+    <string name="walk_label_room_create">Create Room</string>
+    <string name="walk_label_room_list">Rooms</string>
+    <string name="walk_label_main">Main Menu</string>
+
+</resources>
