@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Authentication Screen -->
+    <string name="fer_login_title">Room Booking System</string>
+    <string name="fer_username">Username</string>
+    <string name="fer_password">Password</string>
+    <string name="fer_login">Login</string>
+
+    <!-- Room Creation Screen -->
+    <string name="fer_create_room_title">Create New Room</string>
+    <string name="fer_room_name">Room Name</string>
+    <string name="fer_capacity">Capacity</string>
+    <string name="fer_create_room">Create Room</string>
+    <string name="fer_back">Back</string>
+
+    <!-- Room List Screen -->
+    <string name="fer_room_list_title">Available Rooms</string>
+    <string name="fer_refresh">Refresh</string>
+
+    <!-- Dialogs -->
+    <string name="fer_book_room_title">Book Room</string>
+    <string name="fer_book_room_message">Do you want to book room %1$s?</string>
+    <string name="fer_release_room_title">Release Room</string>
+    <string name="fer_release_room_message">Do you want to release room %1$s?</string>
+    <string name="fer_yes">Yes</string>
+    <string name="fer_no">No</string>
+
+    <!-- Error Messages -->
+    <string name="fer_error_empty_fields">Please fill all fields</string>
+    <string name="fer_error_invalid_capacity">Please enter a valid capacity</string>
+    <string name="fer_error_connection">Connection error. Please try again.</string>
+    <string name="fer_error_exception">Error</string>
+    <string name="fer_error_loading_rooms">Error loading rooms</string>
+</resources>
