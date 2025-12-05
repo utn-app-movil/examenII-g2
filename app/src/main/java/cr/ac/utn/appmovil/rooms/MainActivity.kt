@@ -1,5 +1,6 @@
 package cr.ac.utn.appmovil.rooms
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -20,11 +21,12 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val btn1_main = findViewById<Button>(R.id.btn1_main)
-        btn1_main.setOnClickListener(View.OnClickListener{ view->
-            //kris_
-            util.openActivity(this, MainActivity::class.java)
-        })
+
+        val kris_btnMain = findViewById<Button>(R.id.btn1_main)
+        kris_btnMain.setOnClickListener {
+            startActivity(Intent(this, kris_authentication_activity::class.java))
+        }
+
 
         val btn2_main = findViewById<Button>(R.id.btn2_main)
         btn2_main.setOnClickListener(View.OnClickListener{ view->

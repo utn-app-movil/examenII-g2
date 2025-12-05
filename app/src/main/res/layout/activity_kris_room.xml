@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/kris_room_create_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/kris_tvCreateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kris_room_create_title"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:id="@+id/kris_etRoomName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/kris_room_create_name_hint"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/kris_tvCreateTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:id="@+id/kris_etRoomCapacity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/kris_room_create_capacity_hint"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/kris_etRoomName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/kris_btnCreateRoom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/kris_room_create_button"
+        android:contentDescription="@string/kris_room_create_button"
+        app:layout_constraintTop_toBottomOf="@id/kris_etRoomCapacity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
