@@ -95,7 +95,7 @@ class MainActivity : AppCompatActivity() {
         val btn13_main = findViewById<Button>(R.id.btn13_main)
         btn13_main.setOnClickListener(View.OnClickListener{ view->
             //cagui_
-            util.openActivity(this, MainActivity::class.java)
+            util.openActivity(this, cagui_authentication::class.java)
         })
 
         val btn14_main = findViewById<Button>(R.id.btn14_main)

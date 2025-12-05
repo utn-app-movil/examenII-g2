@@ -12,13 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Restapi">
         <activity
-            android:name=".MainActivity"
+            android:name=".cagui_authentication"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".cagui_roomList"
+            android:exported="false" />
+        <activity
+            android:name=".cagui_room"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
         </activity>
     </application>
 
