@@ -119,7 +119,7 @@ class MainActivity : AppCompatActivity() {
         val btn17_main = findViewById<Button>(R.id.btn17_main)
         btn17_main.setOnClickListener(View.OnClickListener{ view->
             //esteb_
-            util.openActivity(this, MainActivity::class.java)
+            util.openActivity(this, esteb_LoginActivity::class.java)
         })
 
         val btn18_main = findViewById<Button>(R.id.btn18_main)

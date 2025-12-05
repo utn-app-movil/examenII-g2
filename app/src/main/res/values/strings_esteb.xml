@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="esteb_nameUser_viw">User Name</string>
+        <string name="esteb_password_viw">Password</string>
+        <string name="esteb_welcome">Welcome!!!</string>
+        <string name="esteb_loggin">Loggin</string>
+        <string name="esteb_MsgInvalidationData">Empty fields!!!</string>
+        <string name="esteb_MsgIncorrectCredentials">Incorrect credentials!!!</string>
+        <string name="esteb_Error">Error!!!</string>
+        <string name="esteb_room_viw">Room Number</string>
+        <string name="esteb_capacity_viw">Capacity</string>
+        <string name="esteb_create">Create</string>
+        <string name="esteb_list">List All</string>
+        <string name="esteb_MsgInvalidationDataNumber">It has to be a number!!!</string>
+        <string name="esteb_empty_list">Empty List</string>
+        <string name="esteb_back_viw">Back</string>
+    <string name="esteb_refresh_viw">Refresh</string>
+</resources>
