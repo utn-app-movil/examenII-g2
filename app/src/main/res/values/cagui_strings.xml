@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Authentication Activity -->
+    <string name="cagui_app_title">Room Booking System</string>
+    <string name="cagui_auth_title">Login</string>
+    <string name="cagui_username_hint">Username</string>
+    <string name="cagui_password_hint">Password</string>
+    <string name="cagui_login_button">Login</string>
+    <string name="cagui_auth_error">Authentication failed</string>
+    <string name="cagui_auth_success">Login successful</string>
+    <string name="cagui_fill_fields">Please fill all fields</string>
+
+    <!-- Room Creation Activity -->
+    <string name="cagui_room_creation_title">Create Room</string>
+    <string name="cagui_room_name_hint">Room Name</string>
+    <string name="cagui_room_description_hint">Description</string>
+    <string name="cagui_room_capacity_hint">Capacity</string>
+    <string name="cagui_room_floor_hint">Floor</string>
+    <string name="cagui_room_building_hint">Building</string>
+    <string name="cagui_create_room_button">Create Room</string>
+    <string name="cagui_room_created_success">Room created successfully</string>
+    <string name="cagui_room_created_error">Error creating room</string>
+
+    <!-- Room List Activity -->
+    <string name="cagui_room_list_title">Rooms</string>
+    <string name="cagui_refresh_button">Refresh</string>
+    <string name="cagui_create_new_room_button">Create New Room</string>
+    <string name="cagui_room_available">Available</string>
+    <string name="cagui_room_booked">Booked</string>
+    <string name="cagui_book_room">Book Room</string>
+    <string name="cagui_release_room">Release Room</string>
+    <string name="cagui_room_booked_success">Room booked successfully</string>
+    <string name="cagui_room_released_success">Room released successfully</string>
+    <string name="cagui_room_already_booked">Room is already booked</string>
+    <string name="cagui_error_loading_rooms">Error loading rooms</string>
+
+    <!-- General -->
+    <string name="cagui_error_network">Network error. Please check your connection</string>
+    <string name="cagui_loading">Loading...</string>
+    <string name="cagui_ok">OK</string>
+    <string name="cagui_cancel">Cancel</string>
+    <string name="cagui_confirm_booking">Confirm Booking</string>
+    <string name="cagui_confirm_release">Confirm Release</string>
+    <string name="cagui_booking_question">Do you want to book this room?</string>
+    <string name="cagui_release_question">Do you want to release this room?</string>
+    <string name="cagui_yes">Yes</string>
+    <string name="cagui_no">No</string>
+
+    <!-- Room Details -->
+    <string name="cagui_capacity">Capacity: %1$d</string>
+    <string name="cagui_floor">Floor: %1$d</string>
+    <string name="cagui_building">Building: %1$s</string>
+</resources>
