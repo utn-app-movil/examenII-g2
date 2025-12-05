@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rooms</string>
+    <string name="tama_login">Log in</string>
+    <string name="tama_user">Username</string>
+    <string name="tama_pass">Password</string>
+    <string name="tama_msg_incomplete">Please complete all fields</string>
+
+    <string name="tama_create_room">Create room</string>
+    <string name="tama_room_name">Room name</string>
+    <string name="tama_room_capacity">Capacity</string>
+
+    <string name="tama_rooms_title">Available rooms</string>
+    <string name="tama_refresh">Refresh</string>
+</resources>
