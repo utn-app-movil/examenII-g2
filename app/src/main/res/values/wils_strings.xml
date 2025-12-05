@@ -1,0 +1,38 @@
+<resources>
+
+    <string name="wils_login_title">Inicio de Sesión - Reserva de Salas</string>
+    <string name="wils_username_hint">Usuario</string>
+    <string name="wils_password_hint">Contraseña</string>
+    <string name="wils_login_button">Iniciar Sesión</string>
+    <string name="wils_authenticating">Autenticando...</string>
+    <string name="wils_login_successful">¡Inicio de sesión exitoso!</string>
+    <string name="wils_authentication_failed">Fallo en la autenticación</string>
+    
+
+    <string name="wils_create_room_title">Crear Nueva Sala</string>
+    <string name="wils_room_name_hint">Nombre de la Sala</string>
+    <string name="wils_room_description_hint">Descripción de la Sala</string>
+    <string name="wils_room_capacity_hint">Capacidad de la Sala</string>
+    <string name="wils_create_room_button">Crear Sala</string>
+    <string name="wils_creating_room">Creando sala...</string>
+    <string name="wils_room_created_success">Sala creada exitosamente</string>
+    <string name="wils_back_to_room_list">Volver a Lista de Salas</string>
+    
+
+    <string name="wils_room_list_title">Lista de Salas</string>
+    <string name="wils_refresh_button">Actualizar</string>
+    <string name="wils_create_new_room">Crear nuevas salas</string>
+    <string name="wils_loading_rooms">Cargando salas...</string>
+    <string name="wils_book_room_button">Reservar Sala</string>
+    <string name="wils_unbook_room_button">Cancelar Reserva</string>
+    <string name="wils_room_available">Disponible</string>
+    <string name="wils_room_booked">Reservada</string>
+    <string name="wils_room_booked_success">Sala reservada exitosamente</string>
+    <string name="wils_room_released_success">Reserva cancelada exitosamente</string>
+
+    <string name="wils_fill_all_fields">Por favor complete todos los campos</string>
+    <string name="wils_valid_capacity">Por favor ingrese una capacidad válida</string>
+    <string name="wils_loading">Cargando...</string>
+    <string name="wils_error_generic">Ocurrió un error. Inténtelo de nuevo.</string>
+    <string name="wils_success_generic">Operación completada exitosamente</string>
+</resources>
