@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alex_login_title">Iniciar sesión</string>
+    <string name="alex_hint_user">*Usuario</string>
+    <string name="alex_hint_pass">*Contraseña</string>
+    <string name="alex_btn_enter">Ingresar</string>
+    <string name="alex_msg_empty_fields">Complete todos los campos</string>
+    <string name="alex_msg_auth_error">No fue posible ingresar</string>
+    <string name="alex_msg_net_error">No hay conexión a Internet</string>
+    <string name="alex_btn_refresh">Recargar</string>
+    <string name="alex_btn_new_room">Nueva sala</string>
+    <string name="alex_msg_load_error">No fue posible cargar datos</string>
+    <string name="alex_status_busy">Ocupada</string>
+    <string name="alex_status_free">Disponible</string>
+    <string name="alex_action_book">Reservar</string>
+    <string name="alex_action_free">Liberar</string>
+    <string name="alex_capacity">*Capacidad: </string>
+    <string name="alex_create_title">Crear nueva sala</string>
+    <string name="alex_hint_room_name">*Nombre de la sala</string>
+    <string name="alex_hint_capacity">*Capacidad</string>
+    <string name="alex_btn_save">Guardar</string>
+    <string name="alex_msg_fill_data">Llene todos los campos</string>
+    <string name="alex_msg_create_error">No fue posible crear la sala</string>
+    <string name="alex_msg_error_detail">Error inesperado: </string>
+    <string name="alex_btn_back">Volver</string>
+</resources>
