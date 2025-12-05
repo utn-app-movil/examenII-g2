@@ -39,10 +39,11 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btn4_main = findViewById<Button>(R.id.btn4_main)
-        btn4_main.setOnClickListener(View.OnClickListener{ view->
-            //knu_
-            util.openActivity(this, MainActivity::class.java)
-        })
+        btn4_main.setOnClickListener {
+            // knu_ - abre el módulo de salas
+            util.openActivity(this, knu_AuthenticationActivity::class.java)
+        }
+
 
         val btn5_main = findViewById<Button>(R.id.btn5_main)
         btn5_main.setOnClickListener(View.OnClickListener{ view->
