@@ -17,9 +17,7 @@
         <activity
             android:name=".alex_RoomListActivity"
             android:exported="false" />
-        <activity
-            android:name=".alex_Files"
-            android:exported="false" />
+
         <activity
             android:name=".alex_LoginActivity"
             android:exported="false" />
