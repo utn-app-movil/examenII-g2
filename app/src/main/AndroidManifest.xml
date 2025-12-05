@@ -20,6 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".emur_AuthenticationActivity" />
+        <activity android:name=".emur_RoomListActivity" android:exported="false" />
+        <activity android:name=".emur_RoomActivity" android:exported="false" />
     </application>
 
 </manifest>

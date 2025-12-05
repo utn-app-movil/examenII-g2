@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Rooms</string>
     <string name="postRestApi">Post Rooms</string>
+    <string name="emur_crear_sala">Crear Sala</string>
 </resources>

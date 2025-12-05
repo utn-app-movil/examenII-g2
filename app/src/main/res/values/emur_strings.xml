@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="emur_app_name">Reserva de Salas - EMUR</string>
+    <string name="emur_login_title">Inicio de Sesión</string>
+    <string name="emur_username_hint">Nombre de usuario</string>
+    <string name="emur_password_hint">Contraseña</string>
+    <string name="emur_login_button">Ingresar</string>
+    <string name="emur_api_error_title">Error de API</string>
+    <string name="emur_rooms_list_title">Lista de Salas</string>
+    <string name="emur_create_room_title">Crear Sala</string>
+    <string name="emur_refresh_button">Refrescar</string>
+    <string name="emur_reserve_room_question">¿Desea reservar la sala %s?</string>
+    <string name="emur_release_room_question">¿Desea liberar la sala %s?</string>
+    <string name="emur_positive_button">Sí</string>
+    <string name="emur_negative_button">No</string>
+</resources>

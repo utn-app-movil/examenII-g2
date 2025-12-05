@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         val btn8_main = findViewById<Button>(R.id.btn8_main)
         btn8_main.setOnClickListener(View.OnClickListener{ view->
             //emur_
-            util.openActivity(this, MainActivity::class.java)
+            util.openActivity(this, emur_AuthenticationActivity::class.java)
         })
 
         val btn9_main = findViewById<Button>(R.id.btn9_main)
