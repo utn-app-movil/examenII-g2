@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Login -->
+    <string name="mich_login_title">Login</string>
+    <string name="mich_button_login">Ingresar</string>
+    <string name="mich_hint_username">Usuario</string>
+    <string name="mich_hint_password">Contraseña</string>
+
+    <!-- Main menu -->
+    <string name="mich_main_title">Módulo Michael</string>
+    <string name="mich_button_create_room">Crear sala</string>
+    <string name="mich_button_view_rooms">Ver salas</string>
+
+    <!-- Create room -->
+    <string name="mich_create_room_title">Crear Sala</string>
+    <string name="mich_button_create_room_action">Crear sala</string>
+    <string name="mich_hint_room_name">Nombre de la sala (ej: CR1-200)</string>
+    <string name="mich_hint_capacity">Capacidad</string>
+
+    <!-- List / actions -->
+    <string name="mich_button_refresh">Refrescar</string>
+    <string name="mich_button_reserve">Reservar</string>
+    <string name="mich_button_release">Liberar</string>
+
+    <!-- Messages -->
+    <string name="mich_msg_fill_fields">Complete todos los campos</string>
+    <string name="mich_msg_room_created">Sala creada correctamente</string>
+    <string name="mich_msg_room_reserved">Sala reservada correctamente</string>
+    <string name="mich_msg_room_released">Sala liberada correctamente</string>
+
+</resources>

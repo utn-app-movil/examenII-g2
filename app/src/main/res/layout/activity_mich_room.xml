@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvTitleRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mich_create_room_title"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/etRoomName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mich_hint_room_name"
+        android:padding="12dp"
+        android:background="#E8E8E8"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etCapacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mich_hint_capacity"
+        android:inputType="number"
+        android:padding="12dp"
+        android:background="#E8E8E8"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnCreateRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mich_button_create_room_action"
+        android:padding="12dp" />
+
+</LinearLayout>
