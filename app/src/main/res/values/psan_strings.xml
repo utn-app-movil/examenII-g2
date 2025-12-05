@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- LOGIN -->
+    <string name="psan_login_username">Username</string>
+    <string name="psan_login_password">Password</string>
+    <string name="psan_login_button">Login</string>
+    <string name="psan_login_error">Both fields are required</string>
+
+    <!-- ROOM LIST -->
+    <string name="psan_title_room_list">Rooms List</string>
+    <string name="psan_refresh_button">Refresh</string>
+    <string name="psan_create_room_button">Create Room</string>
+
+    <!-- ROOM CREATE -->
+    <string name="psan_room_name">Room name</string>
+    <string name="psan_room_capacity">Capacity</string>
+    <string name="psan_room_create_button">Create Room</string>
+
+    <!-- STATUS -->
+    <string name="psan_room_available">Available</string>
+    <string name="psan_room_busy">Busy</string>
+
+</resources>
+

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Rooms</string>
     <string name="postRestApi">Post Rooms</string>
+    <string name="title_activity_psan_authentication">psan_authenticationActivity</string>
+    <string name="title_activity_psan_room_create">psan_roomCreateActivity</string>
+    <string name="title_activity_psan_room_list">psan_roomListActivity</string>
 </resources>
