@@ -20,6 +20,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".frank_LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".frank_RoomsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".frank_CreateRoomActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
