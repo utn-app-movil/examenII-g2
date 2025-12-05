@@ -1,5 +1,5 @@
 package cr.ac.utn.appmovil.rooms
-
+import cr.ac.utn.appmovil.rooms.Walk_AuthenticationActivity 
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -57,10 +57,9 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btn7_main = findViewById<Button>(R.id.btn7_main)
-        btn7_main.setOnClickListener(View.OnClickListener{ view->
-            //walk_
-            util.openActivity(this, MainActivity::class.java)
-        })
+        btn7_main.setOnClickListener {
+            util.openActivity(this, Walk_AuthenticationActivity::class.java)
+        }
 
         val btn8_main = findViewById<Button>(R.id.btn8_main)
         btn8_main.setOnClickListener(View.OnClickListener{ view->

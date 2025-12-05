@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Rooms</string>
     <string name="postRestApi">Post Rooms</string>
+    <string name="title_activity_walk_main_activity.kt">Walk_MainActivity.kt</string>
+    <string name="title_activity_walk_main">Walk_MainActivity</string>
+    <string name="title_activity_walk_room_list">Walk_RoomListActivity</string>
+    <string name="title_activity_walk_room">Walk_RoomActivity</string>
 </resources>
