@@ -20,6 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.auth.meg_AuthenticationActivity" android:exported="true" />
+
+        <activity android:name=".ui.roomlist.meg_RoomListActivity" android:exported="true" />
+
     </application>
 
 </manifest>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">App Móvil Rooms</string>
+
+
+    <string name="login_title">Inicio de sesión</string>
+    <string name="login_user_hint">Usuario</string>
+    <string name="login_pass_hint">Contraseña</string>
+    <string name="login_button">Login</string>
+
+
+    <string name="room_list_title">Listado de salas</string>
+    <string name="room_capacity">Capacidad: %1$d</string>
+    <string name="room_status_busy">Ocupada</string>
+    <string name="room_status_free">Disponible</string>
+    <string name="room_book">Reservar</string>
+    <string name="room_unbook">Liberar</string>
+
+    <string name="create_room_title">Crear sala</string>
+    <string name="create_room_name_hint">Nombre de la sala</string>
+    <string name="create_room_capacity_hint">Capacidad</string>
+    <string name="create_room_button">Crear sala</string>
+
+
+    <string name="error_empty_fields">Complete todos los campos</string>
+    <string name="error_invalid_email">Debe ingresar un correo válido</string>
+    <string name="reservation_dialog_title">Reservar sala</string>
+    <string name="reservation_dialog_message">Ingrese su correo para reservar la sala %1$s</string>
+    <string name="reservation_cancel">Cancelar</string>
+</resources>
