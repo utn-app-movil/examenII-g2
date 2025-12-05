@@ -13,7 +13,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import model.ken_room
-import service.ken_ApiClient
+import Service.ken_ApiClient
 
 class ken_RoomListActivity : AppCompatActivity() {
 

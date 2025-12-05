@@ -6,7 +6,7 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app.ken_RoomListActivity
 import kotlinx.coroutines.*
-import service.ken_ApiClient
+import Service.ken_ApiClient
 
 class ken_LoginActivity : AppCompatActivity() {
 
