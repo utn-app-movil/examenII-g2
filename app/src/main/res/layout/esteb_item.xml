@@ -27,7 +27,6 @@
                 android:id="@+id/tvRoom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ROOM"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="#4180ab" />
@@ -37,7 +36,6 @@
                 android:id="@+id/tvCapacity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CAPACITY"
                 android:textSize="15sp"
                 android:textColor="#333333"
                 android:layout_marginTop="2dp" />
@@ -47,7 +45,6 @@
                 android:id="@+id/tvBusy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="BUSY"
                 android:textSize="14sp"
                 android:textColor="#555555"
                 android:layout_marginTop="2dp" />
@@ -57,7 +54,6 @@
                 android:id="@+id/tvUser"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="user"
                 android:textSize="14sp"
                 android:textColor="#555555"
                 android:layout_marginTop="4dp" />
@@ -67,7 +63,6 @@
                 android:id="@+id/tvDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DATE"
                 android:textSize="13sp"
                 android:textColor="#555555"
                 android:layout_marginTop="4dp" />

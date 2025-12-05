@@ -39,11 +39,10 @@ class esteb_RoomAdapter(
         holder.tvUser.text = "User: ${room.user ?: "-"}"
         holder.tvDate.text = "Date: ${room.date ?: "-"}"
 
-        // Colores dinámicos
         if (room.is_busy) {
-            holder.card.setCardBackgroundColor(0xFFFFD1D1.toInt()) // rojo claro
+            holder.card.setCardBackgroundColor(0xFFFFD1D1.toInt())
         } else {
-            holder.card.setCardBackgroundColor(0xFFD1FFD9.toInt()) // verde claro
+            holder.card.setCardBackgroundColor(0xFFD1FFD9.toInt())
         }
     }
 
