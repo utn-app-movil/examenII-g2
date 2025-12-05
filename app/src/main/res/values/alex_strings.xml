@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alex_login_title">Log In</string>
+    <string name="alex_hint_user">*User</string>
+    <string name="alex_hint_pass">*Password</string>
+    <string name="alex_btn_enter">Log in</string>
+    <string name="alex_msg_empty_fields">Complete all fields</string>
+    <string name="alex_msg_auth_error">Unable to log in</string>
+    <string name="alex_msg_net_error">Unable to connect Internet</string>
+    <string name="alex_btn_refresh">Refresch</string>
+    <string name="alex_btn_new_room">New room</string>
+    <string name="alex_msg_load_error">Unable to refresch data</string>
+    <string name="alex_status_busy">Busy</string>
+    <string name="alex_status_free">Avaliable</string>
+    <string name="alex_action_book">To reserve</string>
+    <string name="alex_action_free">Free</string>
+    <string name="alex_capacity">*Capacity: </string>
+    <string name="alex_create_title">Create new room</string>
+    <string name="alex_hint_room_name">*Name room</string>
+    <string name="alex_hint_capacity">*Capacity</string>
+    <string name="alex_btn_save">Save</string>
+    <string name="alex_msg_fill_data">Complete all fields</string>
+    <string name="alex_msg_create_error">Unable to add room</string>
+    <string name="alex_msg_error_detail">Unexpected error: </string>
+    <string name="alex_btn_back">Back to</string>
+</resources>
