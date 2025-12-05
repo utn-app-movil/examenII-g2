@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import util.util
+import cr.ac.utn.appmovil.rooms.psan_authenticationActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -141,10 +142,11 @@ class MainActivity : AppCompatActivity() {
         })
 
         val btn21_main = findViewById<Button>(R.id.btn21_main)
-        btn21_main.setOnClickListener(View.OnClickListener{ view->
-            //psan_
-            util.openActivity(this, MainActivity::class.java)
+        btn21_main.setOnClickListener(View.OnClickListener { view ->
+
+            util.openActivity(this, psan_authenticationActivity::class.java)
         })
+
 
         val btn22_main = findViewById<Button>(R.id.btn22_main)
         btn22_main.setOnClickListener(View.OnClickListener{ view->
