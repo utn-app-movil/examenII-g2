@@ -45,6 +45,7 @@ class alex_LoginActivity : AppCompatActivity() {
 
                         val intent = Intent(this@alex_LoginActivity, alex_RoomListActivity::class.java)
                         intent.putExtra("CURRENT_USER", resp.data?.user)
+                        intent.putExtra("CURRENT_EMAIL", resp.data?.email)
                         startActivity(intent)
                         finish()
                     } else {

@@ -15,13 +15,16 @@ import retrofit2.Response
 class alex_RoomListActivity : AppCompatActivity() {
 
     private lateinit var adapter: alex_RoomAdapter
+    private var currentUserEmail: String = ""
     private var currentUser: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alex_room_list)
 
+        currentUserEmail = intent.getStringExtra("CURRENT_EMAIL") ?: ""
         currentUser = intent.getStringExtra("CURRENT_USER") ?: ""
+
 
         val rv = findViewById<RecyclerView>(R.id.alex_rv_rooms)
         val btnRefresh = findViewById<Button>(R.id.alex_btn_refresh)
@@ -74,7 +77,7 @@ class alex_RoomListActivity : AppCompatActivity() {
     }
 
     private fun bookRoom(roomName: String) {
-        val req = alex_BookingRequest(roomName, currentUser)
+        val req = alex_BookingRequest(roomName, currentUserEmail)
 
         alex_APIService.api.bookRoom(req).enqueue(object : Callback<alex_GenericResponse> {
             override fun onResponse(call: Call<alex_GenericResponse>, response: Response<alex_GenericResponse>) {
