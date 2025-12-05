@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="jor_app_name">Hello User :D</string>
+    <string name="jor_hint_user">User</string>
+    <string name="jor_hint_password">Password</string>
+    <string name="jor_login">Login</string>
+    <string name="jor_create_room">Create Room</string>
+    <string name="jor_room_name">Room name</string>
+    <string name="jor_capacity">Capacity</string>
+    <string name="jor_create">Create</string>
+    <string name="jor_refresh">Refresh</string>
+</resources>
