@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_margin="3dp">
+
+    <TextView
+        android:id="@+id/sebas_tv_room_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Name"
+        android:textSize="16sp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/sebas_tv_room_capacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capacity"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="7dp" />
+
+    <TextView
+        android:id="@+id/sebas_tv_reserved_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reserved by"
+        android:visibility="gone"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="6dp" />
+
+    <Button
+        android:id="@+id/sebas_btn_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Action"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp" />
+
+</LinearLayout>

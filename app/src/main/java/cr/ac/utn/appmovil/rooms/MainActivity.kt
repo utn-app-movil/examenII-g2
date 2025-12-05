@@ -131,7 +131,7 @@ class MainActivity : AppCompatActivity() {
         val btn19_main = findViewById<Button>(R.id.btn19_main)
         btn19_main.setOnClickListener(View.OnClickListener{ view->
             //sebas_
-            util.openActivity(this, MainActivity::class.java)
+            util.openActivity(this, SebasAuthenticationActivity::class.java)
         })
 
         val btn20_main = findViewById<Button>(R.id.btn20_main)
