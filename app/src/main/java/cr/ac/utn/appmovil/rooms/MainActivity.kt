@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import cr.ac.utn.appmovil.rooms.ui.auth.meg_AuthenticationActivity
 import util.util
 
 class MainActivity : AppCompatActivity() {
@@ -161,7 +162,7 @@ class MainActivity : AppCompatActivity() {
         val btn24_main = findViewById<Button>(R.id.btn24_main)
         btn24_main.setOnClickListener(View.OnClickListener{ view->
             //meg_
-            util.openActivity(this, MainActivity::class.java)
+            util.openActivity(this, meg_AuthenticationActivity::class.java)
         })
 
         val btn25_main = findViewById<Button>(R.id.btn25_main)
