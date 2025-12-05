@@ -53,7 +53,7 @@ class alex_CreateRoomActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<alex_GenericResponse>, t: Throwable) {
-                val errorMsg = getString(R.string.alex_msg_error_detail, t.message)
+                val errorMsg = getString(R.string.alex_msg_error_detail)
                 Toast.makeText(this@alex_CreateRoomActivity, errorMsg, Toast.LENGTH_SHORT).show()
             }
         })
