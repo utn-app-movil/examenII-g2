@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         val btn6_main = findViewById<Button>(R.id.btn6_main)
         btn6_main.setOnClickListener(View.OnClickListener{ view->
             //serg_
-            util.openActivity(this, MainActivity::class.java)
+            util.openActivity(this, SergLoginActivity::class.java)
         })
 
         val btn7_main = findViewById<Button>(R.id.btn7_main)
