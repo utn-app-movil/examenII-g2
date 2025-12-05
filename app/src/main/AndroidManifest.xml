@@ -20,6 +20,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
+
+        <!-- Fernanda's Activities -->
+        <activity
+            android:name=".fer_AuthenticationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fer_RoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fer_RoomListActivity"
+            android:exported="false" />
+=======
+>>>>>>> development
     </application>
 
 </manifest>
