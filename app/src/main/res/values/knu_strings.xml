@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="knu_app_name">Rooms KNU</string>
+
+    <!-- Main -->
+    <string name="knu_go_to_login">Go to Authentication (knu)</string>
+    <string name="knu_go_to_rooms">Go to Room List (knu)</string>
+
+    <!-- Login -->
+    <string name="knu_login_title">Room Booking - Login</string>
+    <string name="knu_username">Username</string>
+    <string name="knu_password">Password</string>
+    <string name="knu_login_button">Login</string>
+
+    <!-- Rooms -->
+    <string name="knu_refresh_rooms">Refresh rooms</string>
+    <string name="knu_room_name">Room</string>
+    <string name="knu_capacity">Capacity</string>
+    <string name="knu_create_room">Create room</string>
+
+    <!-- Room detail -->
+    <string name="knu_room_detail_title">Room detail</string>
+    <string name="knu_book_room">Book room</string>
+    <string name="knu_unbook_room">Unbook room</string>
+</resources>
