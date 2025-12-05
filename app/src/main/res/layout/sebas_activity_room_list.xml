@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room List"
+        android:textSize="19sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/sebas_btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp" />
+
+    <Button
+        android:id="@+id/sebas_btn_create_new_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Room"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="7dp" />
+
+    <ProgressBar
+        android:id="@+id/sebas_pb_room_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/sebas_tv_empty_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No rooms"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sebas_rv_room_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="5dp" />
+
+</LinearLayout>

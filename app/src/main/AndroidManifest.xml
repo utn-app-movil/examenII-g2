@@ -20,6 +20,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SebasAuthenticationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SebasRoomListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SebasRoomActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

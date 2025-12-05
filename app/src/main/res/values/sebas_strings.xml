@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+    <string name="sebas_login_title">Room Reservation</string>
+    <string name="sebas_login_subtitle">Sign in to continue</string>
+    <string name="sebas_username_hint">Username</string>
+    <string name="sebas_password_hint">Password</string>
+    <string name="sebas_login_button">Login</string>
+
+  
+    <string name="sebas_create_room_title">Create New Room</string>
+    <string name="sebas_room_name_hint">Room Name (e.g., ZA-100)</string>
+    <string name="sebas_room_capacity_hint">Capacity</string>
+    <string name="sebas_create_room_button">Create Room</string>
+    <string name="sebas_cancel_button">Cancel</string>
+
+    
+    <string name="sebas_room_list_title">Rooms</string>
+    <string name="sebas_refresh_button">Refresh</string>
+    <string name="sebas_available_legend">Available</string>
+    <string name="sebas_reserved_legend">Reserved</string>
+    <string name="sebas_no_rooms_message">No rooms available</string>
+    <string name="sebas_book_button">Book</string>
+    <string name="sebas_release_button">Release</string>
+
+ 
+    <string name="sebas_loading_message">Loading…</string>
+    <string name="sebas_error_empty_fields">Please fill all fields</string>
+    <string name="sebas_error_network">Network error. Please try again.</string>
+    <string name="sebas_success_room_created">Room created successfully</string>
+    <string name="sebas_success_room_booked">Room booked successfully</string>
+    <string name="sebas_success_room_released">Room released successfully</string>
+    <string name="sebas_reserved_by">Reserved by: %1$s</string>
+    <string name="sebas_capacity_label">Capacity: %1$d</string>
+    <string name="sebas_error_notAuthenticated">Error when authenticating</string>
+
+</resources>

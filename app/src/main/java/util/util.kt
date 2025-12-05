@@ -4,6 +4,9 @@ import android.app.AlertDialog
 import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
+import interfaces.ISebasAPIService
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 const val EXTRA_ID = "cr.ac.utn.appmovil.room"
 
@@ -34,6 +37,18 @@ class util {
             val alert = dialogBuilder.create()
             alert.setTitle(titleQuestion)
             alert.show()
+        }
+
+        /**
+         * Creates and returns an instance of the API service
+         */
+        fun getAPIService(): ISebasAPIService {
+            val retrofit = Retrofit.Builder()
+                .baseUrl(apiURL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build()
+            
+            return retrofit.create(ISebasAPIService::class.java)
         }
     }
 }

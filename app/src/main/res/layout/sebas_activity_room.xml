@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Room"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp" />
+
+    <EditText
+        android:id="@+id/sebas_et_room_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter room name"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capacity"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="7dp" />
+
+    <EditText
+        android:id="@+id/sebas_et_room_capacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="capacity"
+        android:inputType="number"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="20dp" />
+
+    <Button
+        android:id="@+id/sebas_btn_create_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:id="@+id/sebas_btn_cancel_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="12dp" />
+
+    <ProgressBar
+        android:id="@+id/sebas_pb_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/sebas_tv_room_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp" />
+
+</LinearLayout>
