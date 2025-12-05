@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- LOGIN -->
+    <string name="ken_login_title">Room Reservation Login</string>
+    <string name="ken_username">Username</string>
+    <string name="ken_password">Password</string>
+    <string name="ken_btn_login">Login</string>
+
+    <!-- CREATE ROOM -->
+    <string name="ken_create_room_title">Create New Room</string>
+    <string name="ken_room_name">Room name</string>
+    <string name="ken_room_capacity">Capacity</string>
+    <string name="ken_btn_save_room">Save Room</string>
+
+    <!-- ROOM LIST -->
+    <string name="ken_btn_refresh">Refresh Rooms</string>
+
+</resources>
