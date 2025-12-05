@@ -20,6 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
 
         <!-- Fernanda's Activities -->
         <activity
@@ -31,6 +32,8 @@
         <activity
             android:name=".fer_RoomListActivity"
             android:exported="false" />
+=======
+>>>>>>> development
     </application>
 
 </manifest>

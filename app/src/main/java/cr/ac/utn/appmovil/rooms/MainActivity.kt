@@ -35,7 +35,11 @@ class MainActivity : AppCompatActivity() {
         val btn3_main = findViewById<Button>(R.id.btn3_main)
         btn3_main.setOnClickListener(View.OnClickListener{ view->
             //fer_
+<<<<<<< HEAD
             util.openActivity(this, fer_AuthenticationActivity::class.java)
+=======
+            util.openActivity(this, MainActivity::class.java)
+>>>>>>> development
         })
 
         val btn4_main = findViewById<Button>(R.id.btn4_main)
