@@ -20,6 +20,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name=".wils_AuthenticationActivity"
+            android:exported="false" />
+            
+        <activity
+            android:name=".wils_RoomActivity"
+            android:exported="false" />
+            
+        <activity
+            android:name=".wils_RoomListActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
