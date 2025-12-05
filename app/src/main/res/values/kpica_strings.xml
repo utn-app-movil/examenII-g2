@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="kpica_textUserName">Usuario</string>
+    <string name="kpica_textUserPassword">Contraseña</string>
+    <string name="kpica_textLogin">Iniciar Sesión</string>
+    <string name="kpica_ErrorLogin">No se ha podido loguear</string>
+    <string name="kpica_ResponseCorrect">INFO_FOUND</string>
+    <string name="kpica_ResponseSuccess">SUCESSFUL</string>
+</resources>

@@ -167,7 +167,7 @@ class MainActivity : AppCompatActivity() {
         val btn25_main = findViewById<Button>(R.id.btn25_main)
         btn25_main.setOnClickListener(View.OnClickListener{ view->
             //kpica_
-            util.openActivity(this, MainActivity::class.java)
+            util.openActivity(this, kpica_LoginActivity::class.java)
         })
 
         val btn26_main = findViewById<Button>(R.id.btn26_main)

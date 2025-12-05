@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Restapi">
         <activity
+            android:name=".kpica_LoginActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".kpica_RoomActivity"
+            android:exported="false">
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
