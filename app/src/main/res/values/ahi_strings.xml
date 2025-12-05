@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ahi_login_title">Login de Usuario</string>
+    <string name="ahi_username_hint">Usuario</string>
+    <string name="ahi_password_hint">Contraseña</string>
+    <string name="ahi_login_button">Ingresar</string>
+    <string name="ahi_create_room_hint_name">Nombre de la sala (ej: LAB-305)</string>
+    <string name="ahi_create_room_hint_capacity">Capacidad</string>
+    <string name="ahi_create_room_button">Crear Sala</string>
+    <string name="ahi_refresh_button">Refrescar</string>
+    <string name="ahi_room_name_format">%1$s</string>
+    <string name="ahi_room_capacity_format">Capacidad: %1$d</string>
+    <string name="ahi_room_status_available">DISPONIBLE</string>
+    <string name="ahi_room_status_busy">OCUPADA por %1$s</string>
+</resources>
