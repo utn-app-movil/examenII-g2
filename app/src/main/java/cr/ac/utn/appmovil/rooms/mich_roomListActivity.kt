@@ -7,9 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import adapter.mich_RoomAdapter
+import Service.mich_APIService
 import model.mich_Room
 import model.mich_RoomListResponse
-import Service.mich_APIService
 import model.mich_RoomBookingRequest
 import model.mich_RoomBookingResponse
 import retrofit2.Call
@@ -20,13 +20,14 @@ class mich_roomListActivity : AppCompatActivity() {
 
     private lateinit var rvRooms: RecyclerView
     private lateinit var btnRefresh: Button
-    private var username: String = "estudiante"
+    private var email: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mich_room_list)
 
-        username = intent.getStringExtra("username") ?: "estudiante"
+        // Recibimos el email que nos mandó mich_mainActivity
+        email = intent.getStringExtra("email") ?: ""
 
         rvRooms = findViewById(R.id.rvRooms)
         btnRefresh = findViewById(R.id.btnRefresh)
@@ -51,13 +52,11 @@ class mich_roomListActivity : AppCompatActivity() {
                     val body = response.body()
 
                     if (response.isSuccessful && body?.data != null) {
-
                         val rooms: List<mich_Room> = body.data!!
 
                         rvRooms.adapter = mich_RoomAdapter(rooms) { room ->
                             handleRoomAction(room)
                         }
-
                     } else {
                         Toast.makeText(
                             this@mich_roomListActivity,
@@ -86,9 +85,11 @@ class mich_roomListActivity : AppCompatActivity() {
     }
 
     private fun reserveRoom(roomName: String) {
+
+        // Aquí usamos el EMAIL en el campo "username" como pidió el profe
         val request = mich_RoomBookingRequest(
             room = roomName,
-            username = username
+            username = email
         )
 
         mich_APIService.api.mich_booking(request)
@@ -104,7 +105,7 @@ class mich_roomListActivity : AppCompatActivity() {
                         if (body.responseCode == "SUCESSFUL") {
                             Toast.makeText(
                                 this@mich_roomListActivity,
-                                "Sala reservada correctamente",
+                                getString(R.string.mich_msg_room_reserved),
                                 Toast.LENGTH_SHORT
                             ).show()
                             loadRooms()
@@ -155,7 +156,7 @@ class mich_roomListActivity : AppCompatActivity() {
                         if (body.responseCode == "SUCESSFUL") {
                             Toast.makeText(
                                 this@mich_roomListActivity,
-                                "Sala liberada correctamente",
+                                getString(R.string.mich_msg_room_released),
                                 Toast.LENGTH_SHORT
                             ).show()
                             loadRooms()

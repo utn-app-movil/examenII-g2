@@ -4,26 +4,31 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import util.util
+import android.widget.TextView
 
 class mich_mainActivity : AppCompatActivity() {
 
-    private var username: String = "estudiante"
+    private var email: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mich_main)
 
-        username = intent.getStringExtra("username") ?: "estudiante"
+        email = intent.getStringExtra("email") ?: ""
 
-        val btnGoCreate = findViewById<Button>(R.id.btnGoCreateRoom)
-        val btnGoList = findViewById<Button>(R.id.btnGoRoomList)
+        val tvWelcome = findViewById<TextView>(R.id.tvWelcome)
+        val btnGoCreateRoom = findViewById<Button>(R.id.btnGoCreateRoom)
+        val btnGoRoomList = findViewById<Button>(R.id.btnGoRoomList)
 
-        btnGoCreate.setOnClickListener {
-            util.openActivity(this, mich_roomActivity::class.java)
+        // Solo para mostrar algo, no es obligatorio
+        tvWelcome.text = "Módulo Michael - $email"
+
+        btnGoCreateRoom.setOnClickListener {
+            util.openActivity(this, mich_roomActivity::class.java, "email", email)
         }
 
-        btnGoList.setOnClickListener {
-            util.openActivity(this, mich_roomListActivity::class.java, "username", username)
+        btnGoRoomList.setOnClickListener {
+            util.openActivity(this, mich_roomListActivity::class.java, "email", email)
         }
     }
 }

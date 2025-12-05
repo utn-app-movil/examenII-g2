@@ -52,12 +52,14 @@ class mich_authenticationActivity : AppCompatActivity() {
                                 Toast.LENGTH_SHORT
                             ).show()
 
+                            val email = body.data?.email ?: ""
+
                             // Ir al menú principal mich_
                             util.openActivity(
                                 this@mich_authenticationActivity,
                                 mich_mainActivity::class.java,
-                                "username",
-                                username
+                                "email",
+                                email
                             )
 
                         } else {
