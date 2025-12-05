@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Tamara-->
+    <string name="tama_login">Iniciar sesión</string>
+    <string name="tama_user">Usuario</string>
+    <string name="tama_pass">Contraseña</string>
+    <string name="tama_msg_incomplete">Complete todos los campos</string>
+
+    <string name="tama_create_room">Crear sala</string>
+    <string name="tama_room_name">Nombre de la sala</string>
+    <string name="tama_room_capacity">Capacidad</string>
+
+    <string name="tama_rooms_title">Salas disponibles</string>
+    <string name="tama_refresh">Refrescar</string>
+</resources>

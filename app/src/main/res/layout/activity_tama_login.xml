@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tama_rootLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/tama_etUser"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:hint="@string/tama_user" />
+
+    <EditText
+        android:id="@+id/tama_etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/tama_pass"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/tama_btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tama_login" />
+
+    <TextView
+        android:id="@+id/tama_tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/holo_red_dark" />
+
+</LinearLayout>
