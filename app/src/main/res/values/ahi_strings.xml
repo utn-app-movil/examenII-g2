@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ahi_login_title">Login de Usuario</string>
+    <string name="ahi_username_hint">Usuario</string>
+    <string name="ahi_password_hint">Contraseña</string>
+    <string name="ahi_login_button">Ingresar</string>
+    <string name="ahi_create_room_hint_name">Nombre de la sala (ej: LAB-305)</string>
+    <string name="ahi_create_room_hint_capacity">Capacidad</string>
+    <string name="ahi_create_room_button">Crear Sala</string>
+    <string name="ahi_refresh_button">Refrescar</string>
+    <string name="ahi_room_name_format">%1$s</string>
+    <string name="ahi_room_capacity_format">Capacidad: %1$d</string>
+    <string name="ahi_room_status_available">DISPONIBLE</string>
+    <string name="ahi_room_status_busy">OCUPADA por %1$s</string>
+    <string name="ahi_login_welcome">Bienvenido, %1$s</string>
+    <string name="ahi_login_error">Usuario o contraseña incorrectos</string>
+    <string name="ahi_login_server_error">Error del servidor: %1$d</string>
+    <string name="ahi_no_internet">Sin conexión a internet</string>
+
+    <string name="ahi_room_load_error">Error al cargar salas</string>
+
+    <string name="ahi_room_created">Sala creada</string>
+    <string name="ahi_room_create_error">Error al crear sala</string>
+
+    <string name="ahi_room_booking_success">Acción ejecutada correctamente</string>
+    <string name="ahi_room_booking_completed">Operación completada</string>
+    <string name="ahi_room_booking_error_code">Error %1$d</string>
+    <string name="ahi_room_network_error">Error de red: %1$s</string>
+
+    <string name="ahi_room_released">Liberada</string>
+    <string name="ahi_room_release_error">Error al liberar</string>
+</resources>

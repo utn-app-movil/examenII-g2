@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ahi_login_title"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/et_ahi_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ahi_username_hint"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/et_ahi_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ahi_password_hint"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btn_ahi_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ahi_login_button"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>
