@@ -2,6 +2,8 @@ package Service
 
 import Service.ahi_RetrofitClient
 import model.*
+import android.content.res.Resources
+import cr.ac.utn.appmovil.rooms.R
 
 class ahi_RoomRepository {
 
@@ -20,21 +22,21 @@ class ahi_RoomRepository {
                 if (body?.responseCode == "SUCESSFUL") {
                     currentUserEmail = body.data?.emailname
                     currentUserName = body.data?.name?.let { "$it ${body.data?.lastname ?: ""}" }
-                    true to "Bienvenido, ${body.data?.name ?: "Usuario"}"
+                    true to String.format(Resources.getSystem().getString(R.string.ahi_login_welcome), body.data?.name ?: "Usuario")
                 } else {
                     currentUserEmail = null
                     currentUserName = null
-                    false to (body?.message ?: "Usuario o contraseña incorrectos")
+                    false to (body?.message ?: Resources.getSystem().getString(R.string.ahi_login_error))
                 }
             } else {
                 currentUserEmail = null
                 currentUserName = null
-                false to "Error del servidor: ${response.code()}"
+                false to String.format(Resources.getSystem().getString(R.string.ahi_login_server_error), response.code())
             }
         } catch (e: Exception) {
             currentUserEmail = null
             currentUserName = null
-            false to "Sin conexión a internet"
+            false to Resources.getSystem().getString(R.string.ahi_no_internet)
         }
     }
 
@@ -44,7 +46,7 @@ class ahi_RoomRepository {
             if (response.isSuccessful && response.body()?.responseCode == "SUCESSFUL") {
                 response.body()?.data to "OK"
             } else {
-                null to (response.body()?.message ?: "Error al cargar salas")
+                null to (response.body()?.message ?: Resources.getSystem().getString(R.string.ahi_room_load_error))
             }
         } catch (e: Exception) {
             null to e.localizedMessage.orEmpty()
@@ -55,7 +57,11 @@ class ahi_RoomRepository {
         val request = ahi_CreateRoomRequest(roomName, capacity)
         return try {
             val resp = api.createRoom(request)
-            resp.body()?.message ?: if (resp.isSuccessful) "Sala creada" else "Error"
+            resp.body()?.message ?: if (resp.isSuccessful) {
+                Resources.getSystem().getString(R.string.ahi_room_created)
+            } else {
+                Resources.getSystem().getString(R.string.ahi_room_create_error)
+            }
         } catch (e: Exception) {
             e.localizedMessage.orEmpty()
         }
@@ -65,19 +71,18 @@ class ahi_RoomRepository {
         val request = ahi_BookRequest(room, username)
         return try {
             val resp = api.bookRoom(request)
-
             if (resp.isSuccessful) {
                 val body = resp.body()
                 if (body?.responseCode == "SUCESSFUL" || body?.responseCode == "INFO_FOUND") {
-                    body.message ?: "Acción ejecutada correctamente"
+                    body.message ?: Resources.getSystem().getString(R.string.ahi_room_booking_success)
                 } else {
-                    body?.message ?: "Operación completada"
+                    body?.message ?: Resources.getSystem().getString(R.string.ahi_room_booking_completed)
                 }
             } else {
-                resp.errorBody()?.string() ?: "Error ${resp.code()}"
+                resp.errorBody()?.string() ?: String.format(Resources.getSystem().getString(R.string.ahi_room_booking_error_code), resp.code())
             }
         } catch (e: Exception) {
-            "Error de red: ${e.message}"
+            String.format(Resources.getSystem().getString(R.string.ahi_room_network_error), e.message)
         }
     }
 
@@ -85,7 +90,11 @@ class ahi_RoomRepository {
         val request = ahi_UnbookRequest(room)
         return try {
             val resp = api.unbookRoom(request)
-            resp.body()?.message ?: if (resp.isSuccessful) "Liberada" else "Error"
+            resp.body()?.message ?: if (resp.isSuccessful) {
+                Resources.getSystem().getString(R.string.ahi_room_released)
+            } else {
+                Resources.getSystem().getString(R.string.ahi_room_release_error)
+            }
         } catch (e: Exception) {
             e.localizedMessage.orEmpty()
         }

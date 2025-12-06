@@ -4,7 +4,7 @@ data class ahi_User(
     val user: String,
     val name: String,
     val lastname: String,
-    val emailname: String   // ← ¡¡ESTE ES EL NOMBRE CORRECTO DEL JSON!!
+    val emailname: String
 )
 
 data class ahi_AuthRequest(
