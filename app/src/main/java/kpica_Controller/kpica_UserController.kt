@@ -14,7 +14,7 @@ class kpica_UserController {
         this.context=context
     }
 
-    suspend fun userLogin(userName: String, password: String) : Boolean {
+    suspend fun userLogin(userName: String, password: String) : kpica_User {
         var user = kpica_User()
         try {
             user.Username = userName
@@ -23,18 +23,30 @@ class kpica_UserController {
             val userDTO = convertToDTOUserObject(user)
             val response = kpica_APIService.apiUser.loginUser(userDTO)
 
-            if (response.responseCode == context.getString(R.string.kpica_ResponseCorrect))
-                return true
-            else
+            if (response.responseCode == context.getString(R.string.kpica_ResponseCorrect)) {
+                user = convertToUserObjet(response.data)
+                return user
+            }
+            else {
                 throw Exception("${context
                     .getString(R.string.kpica_ErrorLogin)} ${response.message}")
-
+            }
         } catch (e: Exception){
             Log.e("API_Call", "Error fetching data: ${e.message}")
             throw Exception(context
                 .getString(R.string.kpica_ErrorLogin))
         }
-        return false
+        return user
+    }
+
+    private fun convertToUserObjet(item: kpica_DTOUser): kpica_User {
+        val user = kpica_User()
+        user.Username = item.UserName
+        user.Name = item.Name
+        user.LastName = item.LastName
+        user.Email = item.Email
+
+        return user
     }
 
     private fun convertToDTOUserObject (user: kpica_User): kpica_DTOUser {

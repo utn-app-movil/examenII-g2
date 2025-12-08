@@ -1,7 +1,9 @@
 package kpica_Entity
 
-class kpica_User {
-    private var username: String = ""
+import java.io.Serializable
+
+class kpica_User : Serializable {
+    private var username: String? = ""
     private var password: String? = ""
     private var name: String = ""
     private var lastname: String = ""
@@ -10,7 +12,7 @@ class kpica_User {
 
     constructor()
 
-    var Username: String
+    var Username: String?
         get() = this.username
         set(value) {
             this.username = value

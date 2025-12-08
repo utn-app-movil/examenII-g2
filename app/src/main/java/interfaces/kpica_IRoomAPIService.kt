@@ -1,6 +1,9 @@
 package interfaces
 
 import kpica_Entity.kpica_DTORoom
+import kpica_Entity.kpica_DTORoom_Booking
+import kpica_Entity.kpica_DTORoom_Insert
+import kpica_Entity.kpica_DTORoom_UnBooking
 import kpica_Entity.kpica_RoomGetResponse
 import kpica_Entity.kpica_RoomResponse
 import retrofit2.http.Body
@@ -13,9 +16,13 @@ interface kpica_IRoomAPIService {
 
     @Headers("Content-Type: application/json")
     @POST("/rooms")
-    suspend fun createRoom (@Body room: kpica_DTORoom): kpica_RoomResponse
+    suspend fun createRoom (@Body room: kpica_DTORoom_Insert): kpica_RoomResponse
 
     @Headers("Content-Type: application/json")
-    @PUT("/rooms")
-    suspend fun updateRoom (@Body room: kpica_DTORoom): kpica_RoomResponse
+    @PUT("/rooms/booking")
+    suspend fun updateBookingRoom (@Body room: kpica_DTORoom_Booking): kpica_RoomResponse
+
+    @Headers("Content-Type: application/json")
+    @PUT("/rooms/unbooking")
+    suspend fun updateUnBookingRoom (@Body room: kpica_DTORoom_UnBooking): kpica_RoomResponse
 }

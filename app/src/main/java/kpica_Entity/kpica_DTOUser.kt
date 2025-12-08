@@ -3,7 +3,7 @@ package kpica_Entity
 import com.google.gson.annotations.SerializedName
 
 data class kpica_DTOUser (
-    @SerializedName("username") val User: String,
+    @SerializedName("username") val UserName: String?,
     @SerializedName("password") val Password: String?,
     @SerializedName("name") val Name: String,
     @SerializedName("isActive") val IsActive: Boolean?,

@@ -12,6 +12,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 import kpica_Controller.kpica_UserController
+import kpica_Entity.kpica_User
 import util.util
 
 class kpica_LoginActivity : AppCompatActivity() {
@@ -21,6 +22,10 @@ class kpica_LoginActivity : AppCompatActivity() {
     private lateinit var kpica_UserController: kpica_UserController
 
     lateinit var mycontext: Context
+
+    object SessionManager {
+        var user: kpica_User? = null
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,8 +55,10 @@ class kpica_LoginActivity : AppCompatActivity() {
 
         lifecycleScope.launch {
             try {
-                val loginSuccess = kpica_UserController.userLogin(userName, password)
-                if (loginSuccess) {
+                val user = kpica_UserController.userLogin(userName, password)
+                if (user != null) {
+                    user.Username = userName
+                    SessionManager.user = user
                     util.openActivity(mycontext, kpica_RoomActivity::class.java)
                 } else {
                     Toast.makeText(mycontext, getString(R.string.kpica_ErrorLogin),
