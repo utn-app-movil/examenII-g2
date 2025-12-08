@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="kpica_textUserName">Usuario</string>
+    <string name="kpica_textUserPassword">Contraseña</string>
+    <string name="kpica_textLogin">Iniciar Sesión</string>
+    <string name="kpica_ErrorLogin">No se ha podido loguear</string>
+    <string name="kpica_ResponseCorrect">INFO_FOUND</string>
+    <string name="kpica_ResponseSuccess">SUCESSFUL</string>
+    <string name="kpica_RoomName">Sala:</string>
+    <string name="kpica_RoomUser">Usuario:</string>
+    <string name="kpica_RoomCapacity">Capacidad:</string>
+    <string name="kpica_RoomDate">Fecha reserva:</string>
+    <string name="kpica_buttonAddRoom">Agregar sala</string>
+    <string name="kpica_buttonBookingRoom">Reservar</string>
+    <string name="kpica_buttonUnbookingRoom">Liberar</string>
+    <string name="kpica_labelAddRoom">Agregar sala</string>
+    <string name="kpica_RoomIncomplete">Favor, completar todos los campos</string>
+    <string name="kpica_buttonSave">Guardar</string>
+    <string name="kpica_buttonCancel">Cancelar</string>
+</resources>
